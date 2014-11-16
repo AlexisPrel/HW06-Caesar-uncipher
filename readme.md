@@ -1,10 +1,15 @@
 # Phys 2200: Computational physics - HW06 Caesar decryption
+## Objectives
+The program aims at decrypting the following caesar encoded message:
+> Libi imycibqwvm ycwbkcvycm ntcmvbma ycivbqbibma qvdwtdmvbm, ntcfqwvma qvdmvqzm: mb dqkm dmzai
+
 ## C program
 The code actually holds in a single file [caesar.c](./caesar.c) composed of two functions.]
 ### `caesar(int key,char message[]) `
-This function is the core of the program, for a given key and message, it browses each character of the message and replace it by it's caesar encoding.
+This function is the core of the program, for a given key and message, it browses each character of the message and replace it by its caesar encoding.
 This script is case sensitive: it treats separately upper and lower case characters, as the caesar encryption is a process that loops at the Z-A (resp. z-a) transition.
 Thus upper (resp. lower) case decryption is looped with 'A' (resp. 'a') as a starting point.
+Other characters, such as ',' or ':' in our sample, are ignored and left as they are.
 
 The function does not return anything but prints the modified message.
 
