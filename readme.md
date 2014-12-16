@@ -4,7 +4,7 @@ The program aims at decrypting the following caesar encoded message:
 > Libi imycibqwvm ycwbkcvycm ntcmvbma ycivbqbibma qvdwtdmvbm, ntcfqwvma qvdmvqzm: mb dqkm dmzai
 
 ## C program
-The code actually holds in a single file [caesar.c](./caesar.c) composed of two functions.]
+The code actually holds in a single file [caesar.c](./caesar.c) composed of two functions.
 ### `caesar(int key,char message[]) `
 This function is the core of the program, for a given key and message, it browses each character of the message and replace it by its caesar encoding.
 This script is case sensitive: it treats separately upper and lower case characters, as the caesar encryption is a process that loops at the Z-A (resp. z-a) transition.
